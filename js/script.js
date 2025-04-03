@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
             emailjs.sendForm('service_y8eilob', 'template_0fbrelq', this)
                 .then(function(response) {
                     // Show success message
-                    emailStatus.textContent = 'Thank you! Your message has been sent successfully.';
+                    emailStatus.textContent = 'Thank you! Your message has been sent successfully. You will get a reply via email!';
                     emailStatus.className = 'email-status success';
                     
                     // Reset form
@@ -556,7 +556,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         },
                         "polygon": {
                             "nb_sides": 5
-                        }
+                        },
+                    "shape": {
+                        "type": "triangle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        
                     },
                     "opacity": {
                         "value": 0.5,
