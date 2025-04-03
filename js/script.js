@@ -98,7 +98,15 @@ document.addEventListener('DOMContentLoaded', function() {
             "projectImg": "calculator.png",
             "description": "A simple calculator",
             "link": "https://qms85.github.io/GitHubCalculator/"
+        },
+        {
+            "title": "Snake Game 2025"
+            "image": "react"
+            "projectImg": "snakegame2025.png"
+            "description": "My version of snake"
+            "link": "https://qms85.github.io/SnakeGame2025/"
         }
+                
     ];
     
     // Skills data with percentages
