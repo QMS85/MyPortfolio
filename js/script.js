@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://qms85.github.io/GitHubCalculator/"
         },
         {
-            "title": "Snake Game 2025"
-            "image": "react"
-            "projectImg": "snakegame2025.png"
-            "description": "My version of snake"
+            "title": "Snake Game 2025",
+            "image": "react",
+            "projectImg": "snakegame2025.png",
+            "description": "My version of snake",
             "link": "https://qms85.github.io/SnakeGame2025/"
-        }
+        },
                 
     ];
     
