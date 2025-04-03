@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
             emailjs.sendForm('service_y8eilob', 'template_0fbrelq', this)
                 .then(function(response) {
                     // Show success message
-                    emailStatus.textContent = 'Thank you! Your message has been sent successfully. You will get a reply via email. Thanks';
+                    emailStatus.textContent = 'Thank you! Your message has been sent successfully.';
                     emailStatus.className = 'email-status success';
                     
                     // Reset form
