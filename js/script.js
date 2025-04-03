@@ -93,14 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://digitaldividerecords-pty-ltd.github.io/SampleArtistEPK/"
         },
         {
-            "title": "Calculator",
+            "title": "Simple Calculator",
             "image": "react",
             "projectImg": "calculator.png",
             "description": "A simple calculator",
             "link": "https://qms85.github.io/GitHubCalculator/"
         },
         {
-            "title": "Snake Game 2025",
+            "title": "Funky Snake Game",
             "image": "react",
             "projectImg": "snakegame2025.png",
             "description": "My version of snake",
