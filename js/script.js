@@ -557,14 +557,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         "polygon": {
                             "nb_sides": 5
                         },
-                    "shape": {
-                        "type": "triangle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        
-                    },
                     "opacity": {
                         "value": 0.5,
                         "random": true,
