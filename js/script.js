@@ -106,6 +106,28 @@ document.addEventListener('DOMContentLoaded', function() {
             "description": "My version of snake",
             "link": "https://qms85.github.io/SnakeGame2025/"
         },
+        {
+            "title": "QR Code",
+            "image": "react",
+            "projectImg": "qrcode.png"
+            "description": "QR Code: Front End Mentor Challenge"
+            "link": "https://qms85.github.io/QRCode/"
+        },
+        {
+            "title": "Blog Preview Card"
+            "image": "react"
+            "projectImg": "blog.png"
+            "description": "Blog Preview Card: Front End Mentor Challenge"
+            "link": "https://qms85.github.io/BlogPreviewCard/"
+        },
+        {
+            "title": "Social Links Profile"
+            "image": "react"
+            "projectImg": "social.png"
+            "description": "Social Links Profile: Front End Mentor Challenge"
+            "link": "https://qms85.github.io/SocialLinks/"
+        },
+                
                 
     ];
     
