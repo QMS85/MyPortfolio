@@ -2,28 +2,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project data
     const projects = [
         {
-            "title": "Job Listings",
+            "title": "Job Listings: Figma Design",
             "image": "nodejs",
             "projectImg": "joblisting.png",
             "description": "A job listing website",
             "link": "https://qms85.github.io/JobListings/"
         },
         {
-            "title": "Product List With Cart",
+            "title": "Product List With Cart: Figma Design",
             "image": "javascript",
             "projectImg": "dessert.png",
             "description": "A dessert menu list with cart",
             "link": "https://qms85.github.io/ProductListWithCart/"
         },
         {
-            "title": "Easybank",
+            "title": "Easybank: Figma Design",
             "image": "react",
             "projectImg": "easy.png",
             "description": "A bank landing page",
             "link": "https://qms85.github.io/EasyBankLandingPage/"
         },
         {
-            "title": "Multi Step Form",
+            "title": "Multi Step Form: Figma Design",
             "image": "nodejs",
             "projectImg": "multi.png",
             "description": "A Multi Step Form",
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://qms85.github.io/Rock-Paper-Scissors-Game/"
         },
         {
-            "title": "Product Preview Card",
+            "title": "Product Preview Card: Figma Design",
             "image": "react",
             "projectImg": "productpreviewcard.png",
             "description": "A Product Preview Card",
@@ -170,14 +170,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://qms85.github.io/QRCode/"
         },
         {
-            "title": "Blog Preview Card",
+            "title": "Blog Preview Card: Figma Design",
             "image": "react",
             "projectImg": "blog.png",
             "description": "Blog Preview Card: Front End Mentor Challenge",
             "link": "https://qms85.github.io/BlogPreviewCard/"
         },
         {
-            "title": "Social Links Profile",
+            "title": "Social Links Profile: Figma Design",
             "image": "react",
             "projectImg": "social.png",
             "description": "Social Links Profile: Front End Mentor Challenge",
