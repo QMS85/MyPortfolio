@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://qms85.github.io/SnakeGame2025/"
         },
         {
-            "title": "QR Code",
+            "title": "QR Code: Figma Design",
             "image": "react",
             "projectImg": "qrcode.png",
             "description": "QR Code: Front End Mentor Challenge",
