@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project data
     const projects = [
         {
+            "title": "Gem-Jumper: Platform game",
+            "image": "nodejs",
+            "projectImg": "gem-jumper.png",
+            "description": "A mario-style platform game",
+            "link": "https://gem-jumper-f4f91f18.base44.app/"
+        },
+        {
             "title": "Job Listings: Figma Design",
             "image": "nodejs",
             "projectImg": "joblisting.png",
