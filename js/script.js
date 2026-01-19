@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle CV download notification
     const handleCVDownload = () => {
-        const downloadBtn = document.querySelector('.download-cv-btn');
+        const downloadBtn = document.querySelector('download-cv-btn');
         const notification = document.getElementById('cv-notification');
         
         if (!downloadBtn || !notification) return;
