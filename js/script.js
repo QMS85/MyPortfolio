@@ -606,23 +606,69 @@ document.addEventListener('DOMContentLoaded', function() {
         document.head.appendChild(style);
     };
     
-    // Handle CV download notification
-    const handleCVDownload = () => {
-        const downloadBtn = document.querySelector('download-cv-btn');
-        const notification = document.getElementById('cv-notification');
-        
-        if (!downloadBtn || !notification) return;
-        
-        downloadBtn.addEventListener('click', () => {
-            // Show the notification
-            notification.classList.add('show');
-            
-            // Hide the notification after 3 seconds
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 3000);
-        });
+     // Replace existing handleCVDownload() implementation with this one
+const handleCVDownload = () => {
+    const downloadBtn = document.querySelector('#download-cv-btn');
+    const notification = document.getElementById('cv-notification');
+
+    if (!downloadBtn || !notification) return;
+
+    // Helper to show notification (success or error)
+    const showCVNotification = (message, type = 'success') => {
+        // type: 'success' or 'error'
+        notification.classList.add('show');
+        if (type === 'success') {
+            notification.innerHTML = '<i class="fas fa-check-circle"></i><span>' + message + '</span>';
+            notification.style.backgroundColor = ''; // let CSS control default
+        } else {
+            notification.innerHTML = '<i class="fas fa-exclamation-circle"></i><span>' + message + '</span>';
+            // set a visible error background; you can replace with a CSS class instead
+            notification.style.backgroundColor = 'var(--danger-color, #e74c3c)';
+        }
+        // Hide after 3s
+        setTimeout(() => {
+            notification.classList.remove('show');
+            // restore default content
+            notification.innerHTML = '<i class="fas fa-check-circle"></i><span>CV downloaded successfully!</span>';
+            notification.style.backgroundColor = '';
+        }, 3000);
     };
+
+    downloadBtn.addEventListener('click', async (e) => {
+        // Get the href of the CV
+        const href = downloadBtn.getAttribute('href');
+        if (!href) {
+            e.preventDefault();
+            showCVNotification('Unable to download CV. File path is missing.', 'error');
+            return;
+        }
+
+        // Quick HEAD check to ensure file exists and server returns 2xx
+        try {
+            const res = await fetch(href, { method: 'HEAD' });
+            if (!res.ok) {
+                // Prevent default download (link) behavior if file is not available
+                e.preventDefault();
+                if (res.status === 404) {
+                    showCVNotification('Unable to download CV. File not found (404).', 'error');
+                } else {
+                    showCVNotification(`Unable to download CV. Server returned ${res.status}.`, 'error');
+                }
+                return;
+            }
+
+            // All good: show success notification and allow the browser to handle download
+            showCVNotification('CV downloaded successfully!', 'success');
+
+            // Note: We do not prevent default so the browser will carry out the download from the anchor.
+            // If you want to trigger download programmatically (more reliable cross-origin), you could fetch the blob and create an object URL.
+        } catch (err) {
+            e.preventDefault();
+            console.error('Error checking CV file:', err);
+            showCVNotification('Unable to download CV. Network error.', 'error');
+        }
+    });
+};
 
     // Handle back to top button
     const handleBackToTop = () => {
