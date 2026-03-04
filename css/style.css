@@ -197,6 +197,11 @@ a:hover {
     margin-top: 1rem;
     position: relative;
     overflow: hidden;
+    /* Add/ensure download button inherits primary button sizing and border radius */
+    border-radius: var(--btn-radius, 8px); /* match other buttons */
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .download-cv-btn::after {
