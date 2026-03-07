@@ -192,13 +192,13 @@ a:hover {
 
 .download-cv-btn {
     background: linear-gradient(45deg, var(--secondary-color), #38b2ac);
-    color: white;
+    color: orange;
     box-shadow: 0 4px 15px rgba(0, 206, 201, 0.3);
     margin-top: 1rem;
     position: relative;
     overflow: hidden;
     /* Add/ensure download button inherits primary button sizing and border radius */
-    border-radius: var(--btn-radius, 8px); /* match other buttons */
+    border-radius: var(--btn-radius, 25px); /* match other buttons */
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     line-height: 1;
